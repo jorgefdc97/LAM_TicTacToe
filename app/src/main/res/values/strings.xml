@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="X">X</string>
+    <string name="O">O</string>
+    <string name="Winner">O jogo terminou. Ganhou o %s</string>
+    <string name="TicTacToe">Tic Tac Toe</string>
+    <string name="PlayerTurn">Vez do jogador: </string>
+</resources>
