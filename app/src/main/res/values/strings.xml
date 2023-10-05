@@ -2,7 +2,8 @@
     <string name="app_name">TicTacToe</string>
     <string name="X">X</string>
     <string name="O">O</string>
-    <string name="Winner">O jogo terminou. Ganhou o %s</string>
+    <string name="Winner">Game finished. The winner is %s</string>
     <string name="TicTacToe">Tic Tac Toe</string>
-    <string name="PlayerTurn">Vez do jogador: </string>
+    <string name="PlayerTurn">%S\'s turn</string>
+    <string name="reset">Reset board</string>
 </resources>

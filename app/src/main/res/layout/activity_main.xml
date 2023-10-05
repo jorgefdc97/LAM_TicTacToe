@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <ImageView
@@ -35,33 +36,36 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -74,17 +78,19 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -96,11 +102,13 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
         </TableRow>
 
         <TableRow
@@ -112,33 +120,36 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:background="@android:color/transparent"
+                android:onClick="onClick"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="80dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -146,13 +157,47 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="249dp"
-        android:layout_height="60dp"
+        android:layout_width="376dp"
+        android:layout_height="80dp"
         android:layout_marginTop="20dp"
         android:text="@string/PlayerTurn"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/TicTacToe"
+        android:textAlignment="center"
+        android:textSize="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/winnerView"
+        android:layout_width="386dp"
+        android:layout_height="410dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickReset"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
